@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poov.programa14javafx.controller.vacinecontroller">
+   <children>
+      <Label layoutX="782.0" layoutY="14.0" text="Vacina">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="14.0" text="Pessoa">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="281.0" text="Ate:" />
+      <DatePicker fx:id="apartirde" layoutX="123.0" layoutY="249.0" promptText="xx/xx/xxxx" />
+      <Label layoutX="69.0" layoutY="253.0" text="A partir:" />
+      <Label layoutX="14.0" layoutY="221.0" text="Nascimento:" />
+      <Label layoutX="46.0" layoutY="127.0" text="Nome:" />
+      <Label layoutX="60.0" layoutY="176.0" text="CPF:" />
+      <TextField fx:id="cpf" layoutX="92.0" layoutY="172.0" />
+      <TextField fx:id="pessoanome" layoutX="92.0" layoutY="123.0" />
+      <TextField fx:id="pessoacodigo" layoutX="92.0" layoutY="79.0" />
+      <Button layoutX="488.0" layoutY="656.0" mnemonicParsing="false" onAction="#aplicacao" prefHeight="46.0" prefWidth="119.0" text="Aplicação" />
+      <Label layoutX="42.0" layoutY="83.0" text="Codigo:" />
+      <Line endX="527.0" endY="-37.0" layoutX="22.0" layoutY="37.0" startX="527.0" startY="591.5" />
+      <Label layoutX="614.0" layoutY="83.0" text="Código:" />
+      <TextField fx:id="cod" layoutX="663.0" layoutY="79.0" />
+      <Label layoutX="614.0" layoutY="119.0" text="Nome:" />
+      <TextField fx:id="name" layoutX="663.0" layoutY="115.0" />
+      <Label layoutX="594.0" layoutY="156.0" text="Descrição:" />
+      <TextField fx:id="desc" layoutX="663.0" layoutY="152.0" />
+      <Button layoutX="976.0" layoutY="115.0" mnemonicParsing="false" onAction="#search" text="Pesquisar" />
+      <Button layoutX="1110.0" layoutY="387.0" mnemonicParsing="false" onAction="#nova" text="NOVA" />
+      <Button layoutX="1110.0" layoutY="427.0" mnemonicParsing="false" onAction="#edit" text="EDITAR" />
+      <Button layoutX="1110.0" layoutY="465.0" mnemonicParsing="false" onAction="#remove" text="REMOVER" />
+      <TableView fx:id="pessoatable" layoutX="7.0" layoutY="319.0" prefHeight="311.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="pessoacodtable" prefWidth="59.0" text="Codigo" />
+          <TableColumn fx:id="pessoanometable" prefWidth="144.0" text="Nome" />
+            <TableColumn fx:id="cpftable" prefWidth="140.0" text="CPF" />
+            <TableColumn fx:id="nascimentotable" prefWidth="170.0" text="Nascimento" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table" layoutX="576.0" layoutY="319.0" prefHeight="311.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="codtable" prefWidth="119.0" text="Código" />
+          <TableColumn fx:id="codname" prefWidth="134.0" text="Nome" />
+            <TableColumn fx:id="coddesc" prefWidth="182.0" text="Descrição" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="ate" layoutX="123.0" layoutY="277.0" promptText="xx/xx/xxxx" />
+      <Button layoutX="375.0" layoutY="217.0" mnemonicParsing="false" onAction="#searchpessoa" text="Pesquisar" />
+   </children>
+</AnchorPane>

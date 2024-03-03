@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+   prefHeight="368.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/21"
+   xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="poov.programa14javafx.controller.auxiliarcontroller">
+   <children>
+      <Label fx:id="codLabel" layoutX="86.0" layoutY="64.0" text="Código:" />
+      <TextField fx:id="cod" layoutX="135.0" layoutY="60.0" />
+      <Label layoutX="86.0" layoutY="100.0" text="Nome:" />
+      <TextField fx:id="name" layoutX="135.0" layoutY="96.0" />
+      <Label layoutX="66.0" layoutY="137.0" text="Descrição:" />
+      <Button layoutX="137.0" layoutY="285.0" mnemonicParsing="false" onAction="#ok" text="OK" />
+      <Button layoutX="218.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancel"
+         text="CANCELAR" />
+      <TextArea fx:id="desc" layoutX="137.0" layoutY="137.0" prefHeight="110.0" prefWidth="171.0" />
+   </children>
+</AnchorPane>
